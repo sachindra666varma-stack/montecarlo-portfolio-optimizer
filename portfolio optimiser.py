@@ -2,6 +2,7 @@
 Markowitz Efficient Frontier Portfolio Optimizer
 """
 
+import os
 import numpy as np
 import pandas as pd
 import yfinance as yf
@@ -181,6 +182,7 @@ ax2.grid(True, linestyle="--", alpha=0.4)
 plt.setp(ax2.xaxis.get_majorticklabels(), rotation=30, ha="right")
 
 plt.tight_layout()
-plt.savefig("/mnt/user-data/outputs/portfolio_analysis.png", dpi=150, bbox_inches="tight")
-print("\nChart saved → portfolio_analysis.png")
+output_path = os.path.join(os.getcwd(), "portfolio_analysis.png")
+plt.savefig(output_path, dpi=150, bbox_inches="tight")
+print(f"\nChart saved → {output_path}")
 plt.show()

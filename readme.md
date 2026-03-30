@@ -98,21 +98,70 @@ This gives a realistic, historically-grounded picture of how each strategy perfo
 
 ---
 
-## Visualizations
+## Example
 
-### Efficient Frontier
+**Markowitz Efficient Frontier Portfolio Optimizer**
 
-> **[INSERT EFFICIENT FRONTIER IMAGE HERE]**
+
+Enter initial investment amount ($): 100000
+Enter number of assets: 5
+  Enter ticker 1: AAPL
+  Enter ticker 2: XOM
+  Enter ticker 3: JNJ
+  Enter ticker 4: PG
+  Enter ticker 5: DUK
+
+Downloading data for ['AAPL', 'XOM', 'JNJ', 'PG', 'DUK'] …
+Data ready: 1509 trading days, 5 assets.
+
+
+=======================================================
+  PORTFOLIO COMPARISON
+
+────────────────────────────────────────
+  Optimized Portfolio (Max Sharpe)
+────────────────────────────────────────
+  AAPL    :  99.37%
+  XOM     :   0.00%
+  JNJ     :   0.00%
+  PG      :   0.63%
+  DUK     :   0.00%
+  Expected Annual Return : 30.88%
+  Annual Volatility      : 31.53%
+  Sharpe Ratio           : 0.7889
+  Sortino Ratio          : 1.0924
+  95% Historical VaR     : -3.06%  (daily)
+
+────────────────────────────────────────
+  Equal-Weight Portfolio
+────────────────────────────────────────
+  AAPL    :  20.00%
+  XOM     :  20.00%
+  JNJ     :  20.00%
+  PG      :  20.00%
+  DUK     :  20.00%
+  Expected Annual Return : 14.61%
+  Annual Volatility      : 18.39%
+  Sharpe Ratio           : 0.4678
+  Sortino Ratio          : 0.5846
+  95% Historical VaR     : -1.57%  (daily)
+
+Running 20,000 Monte Carlo simulations …
+
+────────────────────────────────────────
+  FINAL INVESTMENT VALUES
+  Initial Investment      : \$100,000.00
+  Optimized Portfolio     : \$470,849.05  (370.8%)
+  Equal-Weight Portfolio  : \$216,525.53  (116.5%)
+────────────────────────────────────────
+
+### Efficient Frontier and 
+
+![Efficient Frontier](images/portfolio_analysis.png)
 
 The scatter plot shows all 20,000 simulated portfolios. Each point is colored by its Sharpe Ratio (brighter = better risk-adjusted return). The **optimized portfolio** (★) and **equal-weight portfolio** (◆) are highlighted. The upper-left boundary of the cloud is the efficient frontier — portfolios with the highest return for a given level of risk.
 
----
-
-### Investment Growth Comparison
-
-> **[INSERT INVESTMENT GROWTH IMAGE HERE]**
-
-This chart shows the dollar value of the initial investment over the 2018–2024 period for both strategies. The horizontal dashed line marks the starting value. The gap between the two lines illustrates the real-world impact of optimized allocation vs. naive equal-weighting.
+The chart on the right shows the dollar value of the initial investment over the 2018–2024 period for both strategies. The horizontal dashed line marks the starting value. The gap between the two lines illustrates the real-world impact of optimized allocation vs. naive equal-weighting.
 
 ---
 
