@@ -115,12 +115,11 @@ Downloading data for ['AAPL', 'XOM', 'JNJ', 'PG', 'DUK'] …
 Data ready: 1509 trading days, 5 assets.
 
 
-=======================================================
-  PORTFOLIO COMPARISON
 
-────────────────────────────────────────
-  Optimized Portfolio (Max Sharpe)
-────────────────────────────────────────
+  **PORTFOLIO COMPARISON**
+
+  **Optimized Portfolio (Max Sharpe)**
+
   AAPL    :  99.37%
   XOM     :   0.00%
   JNJ     :   0.00%
@@ -132,9 +131,9 @@ Data ready: 1509 trading days, 5 assets.
   Sortino Ratio          : 1.0924
   95% Historical VaR     : -3.06%  (daily)
 
-────────────────────────────────────────
-  Equal-Weight Portfolio
-────────────────────────────────────────
+
+  **Equal-Weight Portfolio**
+
   AAPL    :  20.00%
   XOM     :  20.00%
   JNJ     :  20.00%
@@ -146,16 +145,15 @@ Data ready: 1509 trading days, 5 assets.
   Sortino Ratio          : 0.5846
   95% Historical VaR     : -1.57%  (daily)
 
-Running 20,000 Monte Carlo simulations …
+Running 20,000 Monte Carlo simulations...
 
-────────────────────────────────────────
-  FINAL INVESTMENT VALUES
-  Initial Investment      : \$100,000.00
-  Optimized Portfolio     : \$470,849.05  (370.8%)
-  Equal-Weight Portfolio  : \$216,525.53  (116.5%)
-────────────────────────────────────────
+**FINAL INVESTMENT VALUES**
+Initial Investment      : \$100,000.00
+Optimized Portfolio     : \$470,849.05  (370.8%)
+Equal-Weight Portfolio  : \$216,525.53  (116.5%)
 
-### Efficient Frontier and 
+
+### Efficient Frontier and Investment Growth
 
 ![Efficient Frontier](images/portfolio_analysis.png)
 
